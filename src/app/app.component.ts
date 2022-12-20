@@ -20,10 +20,10 @@ export class AppComponent {
   constructor( private router: Router){}
 
 
-  triggerFlash(){
+  triggerFlash(goto: String){
     this.showOverlay = !this.showOverlay;
     setTimeout(() => {
-      this.router.navigate(['math']);
+      this.router.navigate([goto]);
     }, 1000);
     setTimeout(() => {
       this.showOverlay = !this.showOverlay;

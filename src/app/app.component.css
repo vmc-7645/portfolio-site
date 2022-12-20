@@ -12,7 +12,7 @@
     margin:auto;
     margin-top: 2rem;
     width: 70%;
-    height: 40rem;
+    height: 20rem;
     background-color: rgb(247, 247, 247);
 
     /* border: 2px solid rgb(234, 234, 234);
@@ -28,12 +28,14 @@
     
     width: 85%;
     padding: 2rem;
-    font-family: 'Roboto Slab', cursive;
+    font-family: 'Lora', sans-serif;
     text-align: center;
     font-weight: 800;
-    font-size: 3.2rem;
+    font-size: 4rem;
     color: rgb(22, 22, 22);
     padding-bottom: 2rem;
+
+    pointer-events: none;
 }
 
 .content {
@@ -63,6 +65,7 @@ a.underline-hover-effect {
     text-decoration: none;
     font-weight: 600;
     color: rgb(0, 202, 141);
+    cursor: pointer;
   }
   
   .underline-hover-effect {
