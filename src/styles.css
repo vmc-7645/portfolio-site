@@ -4,3 +4,24 @@ html {
     height:100%;
 }
 
+/* ---------------------------------- */
+/* SCROLL BAR */
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: rgb(238, 238, 238);
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: rgb(21, 21, 21);
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: rgb(21, 21, 21);
+  }

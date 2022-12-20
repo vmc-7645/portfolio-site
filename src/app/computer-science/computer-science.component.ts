@@ -10,6 +10,10 @@ export class ComputerScienceComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
+  //   $('details').click(function (event) {
+  //     $('details').not(this).removeAttr("open");  
+  // });
+  // window.addEventListener("click")
   }
 
 }

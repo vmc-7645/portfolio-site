@@ -86,27 +86,35 @@ a.underline-hover-effect {
 }
 
 
-a.underline-style-1 {
+a.underline-style-mail {
   color: rgb(0, 202, 77);
 }
 
-a.underline-style-2 {
+a.underline-style-linkedin {
   color: rgb(84, 0, 202);
 }
 
-a.underline-style-3 {
+a.underline-style-github {
   color: rgb(202, 0, 81);
 }
 
-.underline-style-1::before {
+a.underline-style-twitter {
+  color: rgb(202, 0, 81);
+}
+
+.underline-style-mail::before {
   background-color: rgb(0, 202, 77);
 }
 
-.underline-style-2::before {
+.underline-style-linkedin::before {
   background-color: rgb(84, 0, 202);
 }
 
-.underline-style-3::before{
+.underline-style-github::before{
+  background-color: rgb(202, 0, 81);
+}
+
+.underline-style-twitter::before{
   background-color: rgb(202, 0, 81);
 }
 
@@ -154,3 +162,96 @@ a.underline-style-3 {
   opacity: .50;
 } */
 
+/* Details */
+.list {
+  padding-top: 1rem;
+  height:20rem;
+  overflow-x: hidden;
+}
+
+details {
+  width: 90%;
+  margin: 0 auto ;
+  margin-bottom: .7rem;
+  /* box-shadow: 0 .1rem 1rem -.5rem rgba(0,0,0,.4); */
+  background: rgb(245, 245, 245);
+  border-radius: 5px;
+  overflow: hidden;
+  position: relative;
+
+}
+
+.details-full {
+  padding: 0.8rem;
+}
+
+summary {
+  padding: 0.2rem;
+  display: block;
+  background: rgb(238, 238, 238);
+  padding-left: 2rem;
+  position: relative;
+  cursor: pointer;
+}
+
+summary:before {
+  content: '';
+  border-width: .4rem;
+  border-style: solid;
+  border-color: transparent transparent transparent rgb(21, 21, 21);
+  position: absolute;
+  top: 0.6rem;
+  left: 1rem;
+  transform: rotate(0);
+  transform-origin: .2rem 50%;
+  transition: .5s transform ease;
+}
+
+/* THE MAGIC 🧙‍♀️ */
+@keyframes details-show {
+  from {
+    opacity:0;
+    margin-bottom: -80%;
+    transform: var(--details-translate, translateY(-100%));
+  }
+}
+
+details[open] > summary:before {
+  transform: rotate(90deg);
+}
+
+details[open] > *:not(summary) {
+  animation: details-show 500ms ease-in-out;
+}
+
+
+details summary::-webkit-details-marker {
+  display:none;
+}
+
+details > ul {
+  padding-bottom: 1rem;
+  margin-bottom: 0;
+}
+
+/* ---------------------------------- */
+/* SCROLL BAR */
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: rgb(238, 238, 238);
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: rgb(21, 21, 21);
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: rgb(21, 21, 21);
+}
