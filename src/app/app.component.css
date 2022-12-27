@@ -20,9 +20,16 @@
     -moz-border-radius: 10px; */
 }
 
+.footer {
+  margin:auto;
+  margin-top: 2rem;
+  width: 70%;
+  height: 5rem;
+  /* background-color: rgb(37, 37, 37); */
+}
+
 
 /* Name and titles */
-
 .name {
     margin: auto;
     
@@ -82,9 +89,8 @@ a.underline-hover-effect {
     width: 0;
     height: 2px;
     background-color: rgb(1, 1, 1);
-    transition: width 0.35s ease-out;
+    transition: width 0.4s ease-out;
   }
-
 
   a.underline-style-1 {
     color: rgb(0, 202, 77);
@@ -127,6 +133,14 @@ a.underline-hover-effect {
   }
 .shake:active {
     animation-name: shake;
+}
+
+/* Disable Select */
+.disable-select {
+  -webkit-user-select: none;  
+  -moz-user-select: none;    
+  -ms-user-select: none;      
+  user-select: none;
 }
 
 /* */
