@@ -25,3 +25,26 @@ html {
   ::-webkit-scrollbar-thumb:hover {
     background: rgb(21, 21, 21);
   }
+
+@media only screen and (max-device-width: 640px) {
+  /* Styles */
+  html {
+    background-color: rgb(247, 247, 247);
+    height:100%;
+    width:100%;
+  }
+  body {
+    /* background-color: aqua; */
+    padding: 0%;
+    margin:0;
+  }
+}
+  
+@media only screen and (max-device-width: 768px) {
+  /* Styles */
+  html {
+    background-color: rgb(247, 247, 247);
+    height:100%;
+    width:100%;
+  }
+}
