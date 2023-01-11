@@ -60,6 +60,21 @@
   color: rgb(44, 44, 44);
 }
 
+/* Video */
+.video{
+  width: 100%;
+  align-content: center;
+  align-items: center;
+  display:block;
+}
+
+iframe{
+  margin: auto;
+  padding: 1rem;
+  display:block;
+}
+
+
 /* Underline Hover effect */
 a.underline-hover-effect {
   text-decoration: none;
@@ -309,6 +324,12 @@ details > ul {
     width: 5%;
   }
   
+  iframe{
+    margin: auto;
+    padding: 1rem;
+    display:block;
+    height: 100px;
+  }
 }
   
 @media only screen and (max-device-width: 768px) {
