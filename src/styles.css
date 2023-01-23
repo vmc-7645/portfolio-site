@@ -1,6 +1,7 @@
 /* You can add global styles to this file, and also import other style files */
 html {
-    background-color: rgb(247, 247, 247);
+    background-color: rgb(255, 255, 255);
+    /* background:url('http://www.pixeden.com/media/k2/galleries/165/003-subtle-light-pattern-background-texture-vol5.jpg'); */
     height:100%;
 }
 
