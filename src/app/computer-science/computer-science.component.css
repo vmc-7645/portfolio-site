@@ -40,7 +40,7 @@
 
 .content {
   margin: auto;
-  width: 80%;
+  width: 60%;
   font-family: 'Roboto Slab', serif;
   font-weight: 400;
   /* text-align: center; */
@@ -62,16 +62,23 @@
 
 /* Video */
 .video{
-  width: 100%;
+  /* width: 100%; */
+  margin: 3rem;
+  height: 0;
+  padding-bottom: 56.25%;
   align-content: center;
   align-items: center;
-  display:block;
+  position: relative;
+  /* display:block; */
 }
 
 iframe{
-  margin: auto;
-  padding: 1rem;
-  display:block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
 }
 
 
@@ -324,12 +331,12 @@ details > ul {
     width: 5%;
   }
   
-  iframe{
+  /* iframe{
     margin: auto;
     padding: 1rem;
     display:block;
     height: 100px;
-  }
+  } */
 }
   
 @media only screen and (max-device-width: 768px) {
