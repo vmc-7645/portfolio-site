@@ -1,23 +1,30 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { MathematicsComponent } from './mathematics/mathematics.component'
-import { ComputerScienceComponent } from './computer-science/computer-science.component'
 import { ContactComponent } from './contact/contact.component'
-
+import { PortfolioComponent } from './portfolio/portfolio.component';
+import { AboutComponent } from './about/about.component';
+import { BlogComponent } from './blog/blog.component';
 
 const routes: Routes = [
   {
-    path: "math",
-    component: MathematicsComponent
-  },
-  {
-    path: "csci",
-    component: ComputerScienceComponent
-  },
-  {
     path: "contact",
     component: ContactComponent
-  }
+  },
+  {
+    path: "portfolio",
+    component: PortfolioComponent
+  },
+  {
+    path: "about",
+    component: AboutComponent
+  },
+  {
+    path: "blog",
+    component: BlogComponent
+  },
+  
+  { path: '', redirectTo: 'about', pathMatch: 'full' },
+  { path: '**', component: AboutComponent } //ERROR 404 not found
 ];
 
 @NgModule({

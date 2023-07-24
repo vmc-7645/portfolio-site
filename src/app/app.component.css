@@ -1,21 +1,43 @@
 
 
+
+/* div {
+  border: 1px dashed red;
+} */
+
+a{
+  padding-left: 1rem;
+  padding-right: 1rem;
+  color: rgb(30, 30, 30);
+  font-weight: 800;
+  font-family: 'Bebas Neue', sans-serif;
+
+}
+
+::selection {
+  background: rgb(255, 217, 0, 0.5);
+}
+/* p {
+  font-family: 'Gideon Roman', cursive;
+} */
+
 .holder {
-    width: 100%;
-    align-content: center;
-    align-items: center;
+  width: 100%;
+  align-content: center;
+  align-items: center;
+  margin: none;
 }
 
 .holdee {
-    margin:auto;
-    margin-top: 2rem;
-    width: 70%;
-    /* height: 20rem; */
-    background: inherit;
+  margin:auto;
+  margin-top: 2rem;
+  width: 80%;
+  /* height: 20rem; */
+  background: inherit;
 
-    /* border: 2px solid rgb(234, 234, 234);
-    border-radius: 10px;
-    -moz-border-radius: 10px; */
+  /* border: 2px solid rgb(234, 234, 234);
+  border-radius: 10px;
+  -moz-border-radius: 10px; */
 }
 
 .footer {
@@ -29,111 +51,57 @@
 
 /* Name and titles */
 .name {
-    margin: auto;
-    
-    width: 85%;
-    padding-top: 2rem;
-    padding-bottom: 2rem;
-    font-family: 'Lora', sans-serif;
-    text-align: center;
-    font-weight: 800;
-    /* font-style: italic; */
-    /* text-shadow: 0px 2px 0px #0217ff; */
-    /* text-shadow: 2px 0px 0px #ffee02; */
-    font-size: 4rem;
-    color: rgb(20, 20, 20);
+  margin: auto;
+  
+  width: 85%;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  font-family: 'Bebas Neue', sans-serif;
+  pointer-events: none;
 
-    pointer-events: none;
+  text-align: center;
+  font-weight: 800;
+  font-size: 5rem;
+
+  color: rgba(23, 23, 23, 0.8);
+  
+  text-shadow: 4px 4px 0px rgba(202, 202, 202, 0.5), 4px -4px 0px rgba(10, 10, 10, 0.862);
 }
 
-.content {
-    margin: auto;
-    width: 60%;
-    font-family: 'Roboto Slab', serif;
-    font-weight: 400;
-    /* text-align: center; */
-    font-size: 1.2rem;
-    color: rgb(21, 21, 21);
+
+
+@keyframes textclip-gleam {to {background-position: 200% center;}}
+
+.menu {
+  
+  margin: auto;
+  text-align: center;
+  width: 60%;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  /* text-align: center; */
+  font-size: 1.2rem;
+  color: rgb(21, 21, 21);
 }
 
-.note {
-    margin: auto;
-    margin-top: 1rem;
-    width: 80%;
-    font-family: 'Roboto Slab', serif;
-    font-weight: 400;
-    font-style: italic;
-    text-align: center;
-    font-size: 1rem;
-    color: rgb(44, 44, 44);
+.menu a.active {
+  color:red;
 }
 
-/* Underline Hover effect */
-a.underline-hover-effect {
-    text-decoration: none;
-    font-weight: 600;
-    color: rgb(0, 202, 141);
-    cursor: pointer;
-  }
-  
-  .underline-hover-effect {
-    display: inline-block;
-    padding-bottom: 0rem; /* defines the space between text and underline */
-    position: relative;
-  }
-  
-  .underline-hover-effect::before {
-    content: "";
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    width: 0;
-    height: 2px;
-    background-color: rgb(1, 1, 1);
-    transition: width 0.4s ease-out;
-  }
-
-  a.underline-style-1 {
-    color: rgb(0, 202, 77);
-  }
-  
-  a.underline-style-2 {
-    color: rgb(84, 0, 202);
-  }
-  
-  a.underline-style-3 {
-    color: rgb(202, 0, 81);
-  }
-
-  .underline-style-1::before {
-    background-color: rgb(0, 202, 77);
-  }
-  
-  .underline-style-2::before {
-    background-color: rgb(84, 0, 202);
-  }
-  
-  .underline-style-3::before{
-    background-color: rgb(202, 0, 81);
-  }
-  
-  .underline-hover-effect:hover::before {
-    width: 100%;
-  }
 
 /* Shake */
 .animated {
-    animation-duration: 0.5s;
-    animation-fill-mode: both;
-    animation-iteration-count: infinite;
+  animation-duration: 0.5s;
+  animation-fill-mode: both;
+  animation-iteration-count: infinite;
 }
 @keyframes shake {
-    0%, 100% {transform: translateX(0px);}
-    10%, 30%, 50%, 70%, 90% {transform: translateX(-10px);}
-    20%, 40%, 60%, 80% {transform: translateX(10px);}
-  }
+  0%, 100% {transform: translateX(0px);}
+  10%, 30%, 50%, 70%, 90% {transform: translateX(-10px);}
+  20%, 40%, 60%, 80% {transform: translateX(10px);}
+}
 .shake:active {
-    animation-name: shake;
+  animation-name: shake;
 }
 
 /* Disable Select */
@@ -146,29 +114,6 @@ a.underline-hover-effect {
 
 /* */
 
-@keyframes opac{0%{opacity:0} 50%{opacity:1} 100%{opacity:0}}
-
-#overlay {
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    background: rgb(255, 255, 255);
-    /* opacity: .50; */
-    /* filter: alpha(opacity=80); */
-    z-index: 2000;
-    /* transition: opacity 1s ease-in-out 2s; */
-    /* pointer-events: none; */
-    animation: opac 1s;
-}
-
-/* #overlay{
-    animation-name: fadeover;
-    background: rgb(255, 81, 81);
-    opacity: .50;
-} */
-
 @media only screen and (max-device-width: 640px) {
   /* Styles */
   .holder {
@@ -179,7 +124,7 @@ a.underline-hover-effect {
   .holdee {
     margin:auto;
     margin-top: 2rem;
-    width: 90%;
+    width: 80%;
     padding: 0%;
     margin: 0%;
   }
@@ -189,23 +134,13 @@ a.underline-hover-effect {
     width: 85%;
     padding-top: 2rem;
     padding-bottom: 2rem;
-    font-family: 'Lora', sans-serif;
-    text-align: center;
     font-weight: 800;
-    font-size: 2rem;
-    color: rgb(22, 22, 22);
+    font-size: 4rem;
 
     pointer-events: none;
   }
-
-  .content {
-      margin: auto;
-      width: 80%;
-      font-family: 'Roboto Slab', serif;
-      font-weight: 400;
-      /* text-align: center; */
-      font-size: 1rem;
-      color: rgb(21, 21, 21);
+  .menu {
+    width: 90%;
   }
 }
   

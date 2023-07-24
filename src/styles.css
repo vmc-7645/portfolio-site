@@ -1,51 +1,7 @@
-/* You can add global styles to this file, and also import other style files */
 html {
-    background-color: rgb(255, 255, 255);
-    /* background:url('http://www.pixeden.com/media/k2/galleries/165/003-subtle-light-pattern-background-texture-vol5.jpg'); */
-    height:100%;
-}
-
-/* ---------------------------------- */
-/* SCROLL BAR */
-/* width */
-::-webkit-scrollbar {
-    width: 10px;
-  }
-  
-  /* Track */
-  ::-webkit-scrollbar-track {
-    background: rgb(238, 238, 238);
-  }
-   
-  /* Handle */
-  ::-webkit-scrollbar-thumb {
-    background: rgb(21, 21, 21);
-  }
-  
-  /* Handle on hover */
-  ::-webkit-scrollbar-thumb:hover {
-    background: rgb(21, 21, 21);
-  }
-
-@media only screen and (max-device-width: 640px) {
-  /* Styles */
-  html {
-    background-color: rgb(247, 247, 247);
-    height:100%;
-    width:100%;
-  }
-  body {
-    /* background-color: aqua; */
+    background: linear-gradient(90deg, #fff 2px, transparent 1%) center, linear-gradient(#fff 4px, transparent 1%) center, #ccc;
+    background-size: 50px 7px;
+    background-color: rgb(249, 249, 249);
     padding: 0%;
-    margin:0;
-  }
-}
-  
-@media only screen and (max-device-width: 768px) {
-  /* Styles */
-  html {
-    background-color: rgb(247, 247, 247);
-    height:100%;
-    width:100%;
-  }
+    border: none;
 }

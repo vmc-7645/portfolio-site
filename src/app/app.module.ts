@@ -3,16 +3,18 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { ComputerScienceComponent } from './computer-science/computer-science.component';
-import { MathematicsComponent } from './mathematics/mathematics.component';
 import { ContactComponent } from './contact/contact.component';
+import { PortfolioComponent } from './portfolio/portfolio.component';
+import { AboutComponent } from './about/about.component';
+import { BlogComponent } from './blog/blog.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    ComputerScienceComponent,
-    MathematicsComponent,
-    ContactComponent
+    ContactComponent,
+    PortfolioComponent,
+    AboutComponent,
+    BlogComponent
   ],
   imports: [
     BrowserModule,
