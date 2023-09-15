@@ -68,10 +68,10 @@
   margin: 1vw;
   padding: 1rem;
   min-height: 10vw;
-  border-top: 5px dashed rgb(209, 209, 209);
-  border-left: 3px dashed rgb(209, 209, 209);
-  border-right: 3px dashed rgb(209, 209, 209);
-  border-bottom: 3px dashed rgb(209, 209, 209);
+  border-top: 3px dashed rgb(209, 209, 209);
+  border-left: 2px dashed rgb(209, 209, 209);
+  border-right: 2px dashed rgb(209, 209, 209);
+  border-bottom: 2px dashed rgb(209, 209, 209);
 
   /* border-radius: 5px; */
   display: inline;
