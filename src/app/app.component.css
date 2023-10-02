@@ -11,7 +11,7 @@ a{
   color: rgb(30, 30, 30);
   font-weight: 800;
   font-family: 'Bebas Neue', sans-serif;
-
+  text-decoration: none;
 }
 
 ::selection {
@@ -30,7 +30,7 @@ a{
 
 .holdee {
   margin:auto;
-  margin-top: 2rem;
+  margin-top: 1rem;
   width: 80%;
   /* height: 20rem; */
   background: inherit;
@@ -52,20 +52,19 @@ a{
 /* Name and titles */
 .name {
   margin: auto;
-  
   width: 85%;
-  padding-top: 2rem;
-  padding-bottom: 2rem;
+  padding-top: 1rem;
+  padding-bottom: 0rem;
   font-family: 'Bebas Neue', sans-serif;
   pointer-events: none;
 
   text-align: center;
   font-weight: 800;
-  font-size: 5rem;
+  font-size: 4rem;
 
-  color: rgba(23, 23, 23, 0.8);
+  color: rgba(23, 23, 23, 0.9);
   
-  text-shadow: 4px 4px 0px rgba(202, 202, 202, 0.5), 4px -4px 0px rgba(10, 10, 10, 0.862);
+  /* text-shadow: 4px 4px 0px rgba(202, 202, 202, 0.5), 4px -4px 0px rgba(10, 10, 10, 0.862); */
 }
 
 
@@ -132,8 +131,6 @@ a{
     margin: auto;
     
     width: 85%;
-    padding-top: 2rem;
-    padding-bottom: 2rem;
     font-weight: 800;
     font-size: 4rem;
 
