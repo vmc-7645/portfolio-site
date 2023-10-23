@@ -2,8 +2,14 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.2.3.
 
-To deploy run `ng deploy --base-href=https://vincentmcasey.com`
+<!-- To deploy run `ng deploy --base-href=https://vincentmcasey.com` -->
 
+Deploy:
+
+```
+ng build --configuration production --base-href "https://vincentmcasey.com"
+npx angular-cli-ghpages --dir=dist/portfolio-site
+```
 
 
 ## Development server
