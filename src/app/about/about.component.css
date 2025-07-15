@@ -45,7 +45,7 @@
     width: 85%;
     padding-top: 2rem;
     padding-bottom: 2rem;
-    font-family: 'Bebas Neue', sans-serif;
+    font-family: 'Rubik', sans-serif;
     pointer-events: none;
 
     text-align: center;
@@ -58,9 +58,9 @@
 }
 
 .content {
-    margin: auto;
+    /* margin: auto; */
     margin-top: 1rem;
-    width: 66vw;
+    /* width: 66vw; */
     display: grid;
     grid-template-columns: 1fr;
 }
@@ -74,10 +74,10 @@
 }
 
 .project {
-    margin: 1vw;
-    padding: 1rem;
+    /* margin: 1vw;
+    padding: 1rem; */
     min-height: 10vw;
-    width: 60vw;
+    /* width: 60vw; */
     /* border-top: 1px solid rgb(209, 209, 209); */
     /* border-left: 3px dashed rgb(209, 209, 209);
     border-right: 3px dashed rgb(209, 209, 209);
@@ -97,13 +97,13 @@
     margin: none;
     color: rgb(30, 30, 30);
     /* font-weight: 800; */
-    /* font-family: 'Bebas Neue', sans-serif; */
+    /* font-family: 'Rubik', sans-serif; */
     cursor:default;
 
 }
 .project h1 {
     margin: none;
-    font-family: 'Bebas Neue', sans-serif;
+    font-family: 'Rubik', sans-serif;
     line-height: 2rem;
 
     background-image: linear-gradient(
@@ -148,24 +148,24 @@
     font-weight: 100;
     color: rgb(75, 75, 75);
     font-size: 1.2rem;
-    font-family: 'Gideon Roman', cursive;
+    font-family: 'Rubik', sans-serif;
 }
 .project a {
     cursor:pointer;
     font-size: 1.2rem;
-    font-family: 'Gideon Roman', cursive;
+    font-family: 'Rubik', sans-serif;
 }
 .project a.link {
     position: absolute;
     bottom: 1rem;
     left: 1rem;
-    font-family: 'Bebas Neue', sans-serif;
+    font-family: 'Rubik', sans-serif;
 }
 .project a.video {
     position: absolute;
     bottom: 1rem;
     right: 1rem;
-    font-family: 'Bebas Neue', sans-serif;
+    font-family: 'Rubik', sans-serif;
 }
 .project img{
     width: 20vw;
@@ -206,7 +206,7 @@
 /* */
 
 span.highlighted {
-    font-family: 'Gideon Roman', cursive;
+    font-family: 'Rubik', sans-serif;
     background: rgba(255, 255, 0, 0.9);
     
     /* background-image: linear-gradient(

@@ -6,7 +6,7 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 Deploy:
 
-```
+```bash
 ng build --configuration production --base-href "https://vincentmcasey.com"
 npx angular-cli-ghpages --dir=dist/portfolio-site
 ```

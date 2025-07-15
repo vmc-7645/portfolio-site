@@ -16,8 +16,8 @@
     margin: auto;
     width: 85%;
     padding-top: 2rem;
-    padding-bottom: 2rem;
-    font-family: 'Bebas Neue', sans-serif;
+    padding-bottom: 1rem;
+    font-family: 'Rubik', sans-serif;
     pointer-events: none;
     text-align: center;
     font-weight: 800;
@@ -30,7 +30,7 @@
 
 .content {
     margin: auto;
-    margin-top: 1rem;
+    margin-top: 0rem;
     width: 33vw;
     display: grid;
     grid-template-columns: 1fr;
@@ -38,48 +38,37 @@
 
 .project {
     margin: 1vw;
-    padding: 1rem;
+    /* padding: 1rem; */
     min-height: 10vw;
     /* border-top: 1px solid rgb(209, 209, 209); */
     position: relative;
+    
 }
 .project * {
     padding: none;
     margin: none;
+    overflow:hidden;
     color: rgb(30, 30, 30);
     font-weight: 800;
-    font-family: 'Bebas Neue', sans-serif;
+    font-family: 'Rubik', sans-serif;
     cursor:default;
 }
 .project h1 {
-    margin: none;
-    font-family: 'Bebas Neue', sans-serif;
+    max-width: 70%;
+    margin: 0rem;
+    margin-top: 0.4rem;
+    padding: 0rem;
+    height: fit-content;
+    font-family: 'Rubik', sans-serif;
     font-size: 1.8rem;
     line-height: 1.6rem;
-    background-image: linear-gradient(
-        -225deg,
-        rgb(48, 48, 48) 10%,
-        #44107a 13%,
-        #ff1361 14%,
-        #fff800 18%,
-        #ff1361 22%,
-        #44107a 23%,
-        rgb(48, 48, 48) 26%,
-        rgb(48, 48, 48) 100%
-    );
-    background-size: auto auto;
-    background-clip: border-box;
-    background-size: 4000% auto;
-    color: #fff;
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    color: black;
 }
 
 .project h1 .date {
     margin: none;
     padding-left: 0.2rem;
-    font-family: 'Bebas Neue', sans-serif;
+    font-family: 'Rubik', sans-serif;
     line-height: 1rem;
     font-size: 1.3rem;
     font-weight: 300;
@@ -88,9 +77,62 @@
     -webkit-text-fill-color: rgb(70, 70, 70);
 }
 
-.project h1:hover {
-    animation: textclip 8s linear infinite;
+.project img {
+    min-width: 100%;
+    min-height: 6rem;
+    background-image: linear-gradient(
+        -72deg,
+        #ffffff 0%,
+        #f2f2f2 14%,
+        #ffffff 100%
+    );
+    background-size: auto auto;
+    background-clip: border-box;
+    /* filter:drop-shadow(2); */
+    border-radius: 2px;
+    /* outline: 1px solid rgb(177, 177, 177); */
 }
+
+.project img.bg-gd-orange {
+    background-image: linear-gradient(
+        -72deg,
+        #ffffff 0%,
+        #ff9645 14%,
+        #ffc445 34%,
+        #ffffff 100%
+    );
+}
+
+.project img.bg-gd-green {
+    background-image: linear-gradient(
+        72deg,
+        #ffffff 0%,
+        #83ff45 66%,
+        #45ffa8 86%,
+        #ffffff 100%
+    );
+}
+
+.project img.bg-gd-red {
+    background-image: linear-gradient(
+        -72deg,
+        #ffffff 0%,
+        #ff6a45 14%,
+        #ff4e45 34%,
+        #ffffff 100%
+    );
+}
+
+.project img.bg-gd-blue {
+    background-image: linear-gradient(
+        108deg,
+        #ffffff 0%,
+        #71d0ff 14%,
+        #4586ff 34%,
+        #ffffff 100%
+    );
+}
+
 
 @keyframes textclip {
     to {
@@ -98,32 +140,42 @@
     }
 }
 
+.dead {
+    color: grey;
+    -webkit-text-fill-color: rgb(104, 104, 104);
+    text-decoration: line-through;
+    cursor:not-allowed;
+    pointer-events: none;
+}
+
 
 .project p {
     margin: none;
-    margin-bottom: 2rem;
+    margin-top: 5px;
+    /* margin-bottom: 2rem; */
     font-weight: 100;
     color: rgb(75, 75, 75);
     font-size: 1rem;
-    font-family: 'Gideon Roman', cursive;
+    font-family: 'Rubik', sans-serif;
 }
 .project a {
     cursor:pointer;
     font-size: 1rem;
-    font-family: 'Gideon Roman', cursive;
+    font-family: 'Rubik', sans-serif;
+    margin-right: 0.5rem;
 }
-.project a.link {
+/* .project a.link {
     position: absolute;
     bottom: 1rem;
     left: 1rem;
-    font-family: 'Bebas Neue', sans-serif;
+    font-family: 'Rubik', sans-serif;
 }
 .project a.video {
     position: absolute;
     bottom: 1rem;
     right: 1rem;
-    font-family: 'Bebas Neue', sans-serif;
-}
+    font-family: 'Rubik', sans-serif;
+} */
 
 
 /* Disable Select */
@@ -148,7 +200,7 @@
     grid-template-columns: 1fr;
     }
     .project {
-        min-height: 35vw;
+        /* min-height: 35vw; */
         filter: none;
     }
 

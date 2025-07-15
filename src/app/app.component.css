@@ -9,16 +9,16 @@ a{
   padding-left: 1rem;
   padding-right: 1rem;
   color: rgb(30, 30, 30);
-  font-weight: 800;
-  font-family: 'Bebas Neue', sans-serif;
-  text-decoration: none;
+  font-weight: 600;
+  font-family: 'Rubik', sans-serif;
+  /* text-decoration: none; */
 }
 
 ::selection {
   background: rgb(255, 217, 0, 0.5);
 }
 /* p {
-  font-family: 'Gideon Roman', cursive;
+  font-family: 'Rubik', sans-serif;
 } */
 
 .holder {
@@ -40,6 +40,11 @@ a{
   -moz-border-radius: 10px; */
 }
 
+.contents {
+  margin: auto;
+  width: 34%;
+}
+
 .footer {
   margin:auto;
   margin-top: 2rem;
@@ -52,15 +57,16 @@ a{
 /* Name and titles */
 .name {
   margin: auto;
+  margin-bottom: 0.5rem;
   width: 85%;
   padding-top: 1rem;
   padding-bottom: 0rem;
-  font-family: 'Bebas Neue', sans-serif;
+  font-family: 'Rubik', sans-serif;
   pointer-events: none;
 
   text-align: center;
-  font-weight: 800;
-  font-size: 4rem;
+  font-weight: 600;
+  font-size: 2rem;
 
   color: rgba(23, 23, 23, 0.9);
   
@@ -81,6 +87,7 @@ a{
   /* text-align: center; */
   font-size: 1.2rem;
   color: rgb(21, 21, 21);
+  /* background-color: red; */
 }
 
 .menu a.active {
@@ -137,6 +144,10 @@ a{
     pointer-events: none;
   }
   .menu {
+    width: 90%;
+  }
+  .contents {
+    margin: auto;
     width: 90%;
   }
 }
