@@ -23,7 +23,7 @@ const routes: Routes = [
     component: BlogComponent
   },
   
-  { path: '', redirectTo: 'about', pathMatch: 'full' },
+  { path: '', redirectTo: 'portfolio', pathMatch: 'full' },
   { path: '**', component: AboutComponent } //ERROR 404 not found
 ];
 

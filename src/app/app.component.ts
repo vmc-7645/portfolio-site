@@ -24,10 +24,10 @@ export class AppComponent {
     this.showOverlay = !this.showOverlay;
     setTimeout(() => {
       this.router.navigate([goto]);
-    }, 500);
+    }, 200);
     setTimeout(() => {
       this.showOverlay = !this.showOverlay;
-    }, 1000);
+    }, 800);
     // Navigate
   }
 
